@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>TASK 1 - STEP 1</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+
+	<body class="bg-gray-200">
+		<div class="mt-10">
+			<h1 class="text-3xl font-bold text-center text-blue-600">
+				HTML structure with forms for user input
+			</h1>
+			<form
+				class="mt-6 max-w-md mx-auto bg-white p-6 rounded-lg shadow-md"
+			>
+				<div class="mb-4">
+					<label
+						for="name"
+						class="block text-gray-700 font-medium"
+						>Name:</label
+					>
+					<input
+						type="text"
+						required
+						id="name"
+						name="name"
+						class="w-full mt-2 px-4 py-2 border-[2px] border-gray-300 rounded-lg"
+					/>
+				</div>
+				<div class="mb-4">
+					<label
+						for="email"
+						class="block text-gray-700 font-medium"
+						>Email:</label
+					>
+					<input
+						type="email"
+						required
+						id="email"
+						name="email"
+						class="w-full mt-2 px-4 py-2 border-[2px] border-gray-300 rounded-lg"
+					/>
+				</div>
+				<div class="mb-4">
+					<label
+						for="message"
+						class="block text-gray-700 font-medium"
+						>Message:</label
+					>
+					<textarea
+						id="message"
+						required
+						name="message"
+						rows="4"
+						class="w-full mt-2 px-4 py-2 border-[2px] border-gray-300 rounded-lg"
+					></textarea>
+				</div>
+
+				<button
+					type="submit"
+					class="w-full bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600"
+				>
+					Submit
+				</button>
+			</form>
+		</div>
+	</body>
+</html>
